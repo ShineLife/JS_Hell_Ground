@@ -1,0 +1,33 @@
+{
+  "name": "vscode-cursedify",
+  "displayName": "Cursedify",
+  "description": "Transform boring math into cursed JavaScript equivalents.",
+  "version": "0.0.1",
+  "publisher": "Shine",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:cursedify.run",
+    "onLanguage:javascript"
+  ],
+  "main": "./extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shine/vscode-cursedify.git"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursedify.run",
+        "title": "Cursedify Current File"
+      }
+    ]
+  },
+  "dependencies": {
+    "recast": "^0.23.4"
+  }
+}
